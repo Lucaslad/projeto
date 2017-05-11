@@ -3,7 +3,6 @@ import random
 #VARIÁVEIS DO PROGRAMA
 nCasas = 24 #Número de casas no tabuleiro
 scInicial = 10000 #Número de Space Coins iniciais
-nomeJogadores = "" #Nome dos jogadores
 statusJogadores = "" #Variável que mostra o estado atual  dos jogadores (0 = Livre; 1 = Preso por 1 turno; 2 = Preso por 2 turnos; 3 = Preso por 3 turnos; 4 = Falido)
 posicaoJogadores = "" #Variável que mostra a posição dos jogadores no tabuleiro (de 0 = ponto inicial, até 24 = ultima casa)
 spacecoins = "" #Variável que mostra a quantia de Space Coins de cada jogador, formatada com 6 espaços, possibilitando o jogador conseguir acumular até 999.999$C
@@ -69,3 +68,31 @@ while(numJogadores<2 or numJogadores>5):
 for i in range(0, numJogadores):
     print("Digite o nome do" ,(i+1), "jogador")
     nome = input()
+    if(i==0):
+        nome1 = nome
+        statusJogadores = "0"
+        posicaoJogadores = "0"
+        spacecoins = scInicial
+    elif(i==1):
+        nome2 = nome
+        statusJogadores = "0"
+        posicaoJogadores = "0"
+        spacecoins = scInicial
+    elif(i==3):
+        nome3 = nome
+        statusJogadores = "0"
+        posicaoJogadores = "0"
+        spacecoins = scInicial
+    elif(i==4):
+        nome4 = nome
+        statusJogadores = "0"
+        posicaoJogadores = "0"
+        spacecoins = scInicial
+    elif(i==5):
+        nome5 = nome
+        statusJogadores = "0"
+        posicaoJogadores = "0"
+        spacecoins = scInicial
+gameover = False
+while not gameover:
+    for i in range (0, numJogadores):
