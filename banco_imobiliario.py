@@ -35,6 +35,7 @@ casaNome = ("Fronteira Intergalática/Portões do Universo"+
             "Base extra-solar X0-3b"+
             "Base extra-solar C0R0T-Exo-1b"+
             "Imposto espacial")
+
 terrenos = ("06000000"+
             "00250025"+
             "00600060"+
@@ -70,29 +71,62 @@ for i in range(0, numJogadores):
     nome = input()
     if(i==0):
         nome1 = nome
-        statusJogadores = "0"
-        posicaoJogadores = "0"
-        spacecoins = scInicial
     elif(i==1):
         nome2 = nome
-        statusJogadores = "0"
-        posicaoJogadores = "0"
-        spacecoins = scInicial
     elif(i==3):
         nome3 = nome
-        statusJogadores = "0"
-        posicaoJogadores = "0"
-        spacecoins = scInicial
     elif(i==4):
         nome4 = nome
-        statusJogadores = "0"
-        posicaoJogadores = "0"
-        spacecoins = scInicial
     elif(i==5):
         nome5 = nome
-        statusJogadores = "0"
-        posicaoJogadores = "0"
-        spacecoins = scInicial
+statusJogadores = "00000"
+statusJogadores = "00000"
+posicaoJogadores = "0000000000"
+spacecoins = scInicial
 gameover = False
 while not gameover:
     for i in range (0, numJogadores):
+        if statusJogadores[i] != "4":
+            if(i==0):
+                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                print(nome1, "sua vez de jogar")
+                print("Para saber sua posição na galaxia digite 1")
+                print("Para saber quantos spacecoins você tem digite 2")
+                print("Para ver seus pertences digite 3")
+                print("Para jogar os dados digite jogar")
+                jogada = input()
+                if(jogada=="1"):
+                    print("Posição:" ,posicao)
+                elif(jogada=="2"):
+                    print("Spacecoins:" ,spacecoins)
+                elif(jogada=="jogar" or jogada=="JOGAR"):
+                    dado = random.randint(1,6)
+            elif(i==1):
+                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                print(nome2, "sua vez de jogar")
+                print("Para saber sua posição na galaxia digite 1")
+                print("Para saber quantos spacecoins você tem digite 2")
+                print("Para ver seus pertences digite 3")
+                print("Para jogar os dados digite jogar")
+            elif(i==2):
+                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                print(nome3, "sua vez de jogar")
+                print("Para saber sua posição na galaxia digite 1")
+                print("Para saber quantos spacecoins você tem digite 2")
+                print("Para ver seus pertences digite 3")
+                print("Para jogar os dados digite jogar")
+            elif(i==3):
+                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                print(nome4, "sua vez de jogar")
+                print("Para saber sua posição na galaxia digite 1")
+                print("Para saber quantos spacecoins você tem digite 2")
+                print("Para ver seus pertences digite 3")
+                print("Para jogar os dados digite jogar")
+            elif(i==4):
+                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                print(nome5, "sua vez de jogar")
+                print("Para saber sua posição na galaxia digite 1")
+                print("Para saber quantos spacecoins você tem digite 2")
+                print("Para ver seus pertences digite 3")
+                print("Para jogar os dados digite jogar")
+    break
