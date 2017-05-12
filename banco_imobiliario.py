@@ -73,8 +73,10 @@ for i in range(0, numJogadores):
         nome1 = nome
     elif(i==1):
         nome2 = nome
-    elif(i==3):
+    elif(i==2):
         nome3 = nome
+    elif (i==3):
+        nome4 = nome
     elif(i==4):
         nome4 = nome
     elif(i==5):
@@ -88,45 +90,102 @@ while not gameover:
     for i in range (0, numJogadores):
         if statusJogadores[i] != "4":
             if(i==0):
-                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
                 print(nome1, "sua vez de jogar")
-                print("Para saber sua posição na galaxia digite 1")
-                print("Para saber quantos spacecoins você tem digite 2")
-                print("Para ver seus pertences digite 3")
-                print("Para jogar os dados digite jogar")
-                jogada = input()
-                if(jogada=="1"):
-                    print("Posição:" ,posicao)
-                elif(jogada=="2"):
-                    print("Spacecoins:" ,spacecoins)
-                elif(jogada=="jogar" or jogada=="JOGAR"):
-                    dado = random.randint(1,6)
+                jogar = ""
+                while(jogar != "jogar"):
+                    posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                    print("Para saber sua posição na galaxia digite 1")
+                    print("Para saber quantos spacecoins você tem digite 2")
+                    print("Para ver seus territórios digite 3")
+                    print("Para jogar digite jogar")
+                    jogada = input()
+                    if (jogada=="1"):
+                        print("Posição:" ,posicao)
+                    elif (jogada=="2"):
+                        print("Spacecoins:" ,spacecoins)
+                    elif (jogada=="3"):
+                        print()
+                    elif (jogada=="jogar" or jogada=="Jogar"):
+                        dado = random.randint(1,6)
+                        posicao += dado
+                        jogar = "jogar"
             elif(i==1):
-                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
                 print(nome2, "sua vez de jogar")
-                print("Para saber sua posição na galaxia digite 1")
-                print("Para saber quantos spacecoins você tem digite 2")
-                print("Para ver seus pertences digite 3")
-                print("Para jogar os dados digite jogar")
+                jogar = ""
+                while(jogar != "jogar"):
+                    posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                    print("Para saber sua posição na galaxia digite 1")
+                    print("Para saber quantos spacecoins você tem digite 2")
+                    print("Para ver seus territórios digite 3")
+                    print("Para jogar os dados digite jogar")
+                    jogada = input()
+                    if (jogada=="1"):
+                        print("Posição:" ,posicao)
+                    elif(jogada=="2"):
+                        print("Spacecoins:" ,spacecoins)
+                    elif(jogada=="3"):
+                        print()
+                    elif(jogada=="jogar" or jogada=="Jogar"):
+                        dado = random.randint(1,6)
+                        posicao += dado
+                        jogar = "jogar"
             elif(i==2):
-                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
                 print(nome3, "sua vez de jogar")
-                print("Para saber sua posição na galaxia digite 1")
-                print("Para saber quantos spacecoins você tem digite 2")
-                print("Para ver seus pertences digite 3")
-                print("Para jogar os dados digite jogar")
+                jogar = ""
+                while (jogar != "jogar"):
+                    posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                    print("Para saber sua posição na galaxia digite 1")
+                    print("Para saber quantos spacecoins você tem digite 2")
+                    print("Para ver seus territórios digite 3")
+                    print("Para jogar os dados digite jogar")
+                    jogada = input()
+                    if (jogada == "1"):
+                        print("Posição:", posicao)
+                    elif (jogada == "2"):
+                        print("Spacecoins:", spacecoins)
+                    elif (jogada == "3"):
+                        print()
+                    elif (jogada == "jogar" or jogada == "Jogar"):
+                        dado = random.randint(1, 6)
+                        posicao += dado
+                        jogar = "jogar"
             elif(i==3):
-                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
                 print(nome4, "sua vez de jogar")
-                print("Para saber sua posição na galaxia digite 1")
-                print("Para saber quantos spacecoins você tem digite 2")
-                print("Para ver seus pertences digite 3")
-                print("Para jogar os dados digite jogar")
+                jogar = ""
+                while (jogar != "jogar"):
+                    posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                    print("Para saber sua posição na galaxia digite 1")
+                    print("Para saber quantos spacecoins você tem digite 2")
+                    print("Para ver seus territórios digite 3")
+                    print("Para jogar os dados digite jogar")
+                    jogada = input()
+                    if (jogada == "1"):
+                        print("Posição:", posicao)
+                    elif (jogada == "2"):
+                        print("Spacecoins:", spacecoins)
+                    elif (jogada == "3"):
+                        print()
+                    elif (jogada == "jogar" or jogada == "Jogar"):
+                        dado = random.randint(1, 6)
+                        posicao += dado
+                        jogar = "jogar"
             elif(i==4):
-                posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
                 print(nome5, "sua vez de jogar")
-                print("Para saber sua posição na galaxia digite 1")
-                print("Para saber quantos spacecoins você tem digite 2")
-                print("Para ver seus pertences digite 3")
-                print("Para jogar os dados digite jogar")
-    break
+                jogar = ""
+                while (jogar != "jogar"):
+                    posicao = int(posicaoJogadores[(i * 2):((i * 2) + 2)])
+                    print("Para saber sua posição na galaxia digite 1")
+                    print("Para saber quantos spacecoins você tem digite 2")
+                    print("Para ver seus territórios digite 3")
+                    print("Para jogar os dados digite jogar")
+                    jogada = input()
+                    if (jogada == "1"):
+                        print("Posição:", posicao)
+                    elif (jogada == "2"):
+                        print("Spacecoins:", spacecoins)
+                    elif (jogada == "3"):
+                        print()
+                    elif (jogada == "jogar" or jogada == "Jogar"):
+                        dado = random.randint(1, 6)
+                        posicao += dado
+                        jogar = "jogar"
