@@ -208,6 +208,8 @@ while not gameover:
                             casaNome = "Imposto espacial"
                             preco = 0
                             aluguel = 0
+                        elif(posicao1>24):
+                            posicao1 = 1
                         jogar = "jogar"
             elif(i==1):
                 print()
@@ -229,6 +231,105 @@ while not gameover:
                     elif(jogada=="jogar" or jogada=="Jogar"):
                         dado = random.randint(1,6)
                         posicao2 += dado
+                        if (posicao2==1):
+                            casaNome = "Fronteira Intergalática/Portões do Universo"
+                            preco = 0
+                            aluguel = 0
+                            compra = "Não é possível comprar"
+                        elif(posicao2==2):
+                            casaNome = "Base Interplanetária de Vênus"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==3):
+                            casaNome = "Base Interplanetária da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao2==4):
+                            casaNome = "Base Interplanetária de Marte"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao2==5):
+                            casaNome = "Base Interplanetária de Júpiter"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao2==6):
+                            casaNome = "Base Interplanetária de Saturno"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==7):
+                            casaNome = "Prisão Univeral/Passagem de Visitantes"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao2==8):
+                            casaNome = "Base Lunar da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao2==9):
+                            casaNome  = "Base Lunar de Fobos"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==10):
+                            casaNome = "Base Lunar Europa"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao2==11):
+                            casaNome = "Base Lunar de Pandora"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao2==12):
+                            casaNome = "Base Lunar de Talassa"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==13):
+                            casaNome = "Satélite da sorte: JACKPOT"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao2==14):
+                            casaNome = "Planeta anão: Plutão"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==15):
+                            casaNome = "Planeta anão: Éris"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao2==16):
+                            casaNome = "Planeta anão: Haumea"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==17):
+                            casaNome = "Planeta anão: Ceres"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao2==18):
+                            casaNome = "Planeta anão: Makemake"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao2==19):
+                            casaNome = "Vá para a prisão universal!"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao2==20):
+                            casaNome = "Base extra-solar Gliese 581 d"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==21):
+                            casaNome = "Base extra-solar Upsilon Andromedae"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao2==22):
+                            casaNome = "Base extra-solar X0-3b"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao2==23):
+                            casaNome = "Base extra-solar C0R0T-Exo-1b"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao2==24):
+                            casaNome = "Imposto espacial"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao2>24):
+                            posicao2 = 1
                         jogar = "jogar"
             elif(i==2):
                 print()
@@ -250,6 +351,105 @@ while not gameover:
                     elif (jogada == "jogar" or jogada == "Jogar"):
                         dado = random.randint(1, 6)
                         posicao3 += dado
+                        if (posicao3==1):
+                            casaNome = "Fronteira Intergalática/Portões do Universo"
+                            preco = 0
+                            aluguel = 0
+                            compra = "Não é possível comprar"
+                        elif(posicao3==2):
+                            casaNome = "Base Interplanetária de Vênus"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==3):
+                            casaNome = "Base Interplanetária da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao3==4):
+                            casaNome = "Base Interplanetária de Marte"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao3==5):
+                            casaNome = "Base Interplanetária de Júpiter"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao3==6):
+                            casaNome = "Base Interplanetária de Saturno"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==7):
+                            casaNome = "Prisão Univeral/Passagem de Visitantes"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao3==8):
+                            casaNome = "Base Lunar da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao3==9):
+                            casaNome  = "Base Lunar de Fobos"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==10):
+                            casaNome = "Base Lunar Europa"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao3==11):
+                            casaNome = "Base Lunar de Pandora"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao3==12):
+                            casaNome = "Base Lunar de Talassa"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==13):
+                            casaNome = "Satélite da sorte: JACKPOT"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao3==14):
+                            casaNome = "Planeta anão: Plutão"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==15):
+                            casaNome = "Planeta anão: Éris"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao3==16):
+                            casaNome = "Planeta anão: Haumea"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==17):
+                            casaNome = "Planeta anão: Ceres"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao3==18):
+                            casaNome = "Planeta anão: Makemake"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao3==19):
+                            casaNome = "Vá para a prisão universal!"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao3==20):
+                            casaNome = "Base extra-solar Gliese 581 d"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==21):
+                            casaNome = "Base extra-solar Upsilon Andromedae"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao3==22):
+                            casaNome = "Base extra-solar X0-3b"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao3==23):
+                            casaNome = "Base extra-solar C0R0T-Exo-1b"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao3==24):
+                            casaNome = "Imposto espacial"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao3>24):
+                            posicao3 = 1
                         jogar = "jogar"
             elif(i==3):
                 print()
@@ -271,6 +471,105 @@ while not gameover:
                     elif (jogada == "jogar" or jogada == "Jogar"):
                         dado = random.randint(1, 6)
                         posicao4 += dado
+                        if (posicao4==1):
+                            casaNome = "Fronteira Intergalática/Portões do Universo"
+                            preco = 0
+                            aluguel = 0
+                            compra = "Não é possível comprar"
+                        elif(posicao4==2):
+                            casaNome = "Base Interplanetária de Vênus"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==3):
+                            casaNome = "Base Interplanetária da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao4==4):
+                            casaNome = "Base Interplanetária de Marte"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao4==5):
+                            casaNome = "Base Interplanetária de Júpiter"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao4==6):
+                            casaNome = "Base Interplanetária de Saturno"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==7):
+                            casaNome = "Prisão Univeral/Passagem de Visitantes"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao4==8):
+                            casaNome = "Base Lunar da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao4==9):
+                            casaNome  = "Base Lunar de Fobos"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==10):
+                            casaNome = "Base Lunar Europa"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao4==11):
+                            casaNome = "Base Lunar de Pandora"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao4==12):
+                            casaNome = "Base Lunar de Talassa"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==13):
+                            casaNome = "Satélite da sorte: JACKPOT"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao4==14):
+                            casaNome = "Planeta anão: Plutão"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==15):
+                            casaNome = "Planeta anão: Éris"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao4==16):
+                            casaNome = "Planeta anão: Haumea"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==17):
+                            casaNome = "Planeta anão: Ceres"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao4==18):
+                            casaNome = "Planeta anão: Makemake"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao4==19):
+                            casaNome = "Vá para a prisão universal!"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao4==20):
+                            casaNome = "Base extra-solar Gliese 581 d"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==21):
+                            casaNome = "Base extra-solar Upsilon Andromedae"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao4==22):
+                            casaNome = "Base extra-solar X0-3b"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao4==23):
+                            casaNome = "Base extra-solar C0R0T-Exo-1b"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao4==24):
+                            casaNome = "Imposto espacial"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao4>24):
+                            posicao4 = 1
                         jogar = "jogar"
             elif(i==4):
                 print()
@@ -292,4 +591,103 @@ while not gameover:
                     elif (jogada == "jogar" or jogada == "Jogar"):
                         dado = random.randint(1, 6)
                         posicao5 += dado
+                        if (posicao5==1):
+                            casaNome = "Fronteira Intergalática/Portões do Universo"
+                            preco = 0
+                            aluguel = 0
+                            compra = "Não é possível comprar"
+                        elif(posicao5==2):
+                            casaNome = "Base Interplanetária de Vênus"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==3):
+                            casaNome = "Base Interplanetária da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao5==4):
+                            casaNome = "Base Interplanetária de Marte"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao5==5):
+                            casaNome = "Base Interplanetária de Júpiter"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao5==6):
+                            casaNome = "Base Interplanetária de Saturno"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==7):
+                            casaNome = "Prisão Univeral/Passagem de Visitantes"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao5==8):
+                            casaNome = "Base Lunar da Terra"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao5==9):
+                            casaNome  = "Base Lunar de Fobos"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==10):
+                            casaNome = "Base Lunar Europa"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao5==11):
+                            casaNome = "Base Lunar de Pandora"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao5==12):
+                            casaNome = "Base Lunar de Talassa"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==13):
+                            casaNome = "Satélite da sorte: JACKPOT"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao5==14):
+                            casaNome = "Planeta anão: Plutão"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==15):
+                            casaNome = "Planeta anão: Éris"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao5==16):
+                            casaNome = "Planeta anão: Haumea"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==17):
+                            casaNome = "Planeta anão: Ceres"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao5==18):
+                            casaNome = "Planeta anão: Makemake"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao5==19):
+                            casaNome = "Vá para a prisão universal!"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao5==20):
+                            casaNome = "Base extra-solar Gliese 581 d"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==21):
+                            casaNome = "Base extra-solar Upsilon Andromedae"
+                            preco = 450
+                            aluguel = 45
+                        elif(posicao5==22):
+                            casaNome = "Base extra-solar X0-3b"
+                            preco = 600
+                            aluguel = 60
+                        elif(posicao5==23):
+                            casaNome = "Base extra-solar C0R0T-Exo-1b"
+                            preco = 250
+                            aluguel = 25
+                        elif(posicao5==24):
+                            casaNome = "Imposto espacial"
+                            preco = 0
+                            aluguel = 0
+                        elif(posicao5>24):
+                            posicao5 = 1
                         jogar = "jogar"
