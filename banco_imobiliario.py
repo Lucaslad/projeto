@@ -1,7 +1,5 @@
 import random
 
-#VARIÁVEIS DO PROGRAMA
-statusJogadores = "" #Variável que mostra o estado atual  dos jogadores (0 = Livre; 1 = Preso por 1 turno; 2 = Preso por 2 turnos; 3 = Preso por 3 turnos; 4 = Falido)
 casaNome = "" #Variável que mostra o nome da cada do tabuleiro
 terrenos = "" #Variável que mostra os respectivos terrenos, com seu id, preço e aluguel, formatado em (00)ID, (000)Preço, (000)Aluguel
 #IDs = 00 = Sem proprietário / 06 = Ponto de partida / 01~05 = Reservado a jogadores / 07 = Imposto / 08 = Vá para prisão / 09 = Prisão / 10 = Jackpot
@@ -93,7 +91,7 @@ while not gameover:
                     if(status1=="preso"):
                         dado = 0
                     else:
-                        dado = 19
+                        dado = random.randint(1,6)
                     posicao1 += dado
                     if (posicao1==1):
                         casaNome1 = "- Fronteira Intergalática/Portões do Universo"
@@ -980,42 +978,19 @@ while not gameover:
                         preco = 0
                         aluguel = 0
                         print("Você caiu na posição:", posicao1, casaNome1)
-                        if (pertence24 == "" or pertence24 == nome1):
-                            print("Você deseja comprar este território por", preco, "Spacecoins (sim/nao)?")
-                            comprar = input()
-                            if (comprar == "sim"):
-                                if (preco != 0):
-                                    if (pertence24 == nome1):
-                                        print("Esse território já é seu")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                elif (pertence24 == ""):
-                                    spacecoins1 -= preco
-                                    pertence24 = nome1
-                                    print("Território adquirido")
-                                    print("Agora você possui", spacecoins1, "Spacecoins")
-                                    while (jogar != "encerrar"):
-                                        print("Digite encerrar para encerrar sua jogada")
-                                        jogar = input()
-                            else:
-                                print("Este terreno não pode ser comprado")
-                                while (jogar != "encerrar"):
-                                    print("Digite encerrar para encerrar sua jogada")
-                                    jogar = input()
-                        else:
-                            while (jogar != "encerrar"):
-                                print("Digite encerrar para encerrar sua jogada")
-                                jogar = input()
-                    else:
-                        print("Esse território já tem dono, o aluguel é", aluguel, "Spacecoins")
-                        spacecoins1 -= aluguel
-                        print("Agora você possui", spacecoins1, "Spacecoins")
+                        print("Você pagará 150 Spacecoins")
+                        spacecoins1-=150
                         while (jogar != "encerrar"):
                             print("Digite encerrar para encerrar sua jogada")
                             jogar = input()
-                elif(posicao1>24):
-                    posicao1 = 1
+
+                    elif(posicao1>24):
+                        print("Você deu a vonta completa no universo e voltará para a posição 1")
+                        print("Você receberá 200 Spacecoins")
+                        spacecoins1+=200
+                        posicao1 = 1
+                        casaNome1 = "- Fronteira Intergalática/Portões do Universo"
+
 
         elif(i==1):
             print()
@@ -1926,42 +1901,18 @@ while not gameover:
                         preco = 0
                         aluguel = 0
                         print("Você caiu na posição:", posicao2, casaNome2)
-                        if (pertence24 == "" or pertence24 == nome2):
-                            print("Você deseja comprar este território por", preco, "Spacecoins (sim/nao)?")
-                            comprar = input()
-                            if (comprar == "sim"):
-                                if (preco != 0):
-                                    if (pertence24 == nome2):
-                                        print("Esse território já é seu")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                    elif (pertence24 == ""):
-                                        spacecoins2 -= preco
-                                        pertence24 = nome2
-                                        print("Território adquirido")
-                                        print("Agora você possui", spacecoins2, "Spacecoins")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                else:
-                                    print("Este terreno não pode ser comprado")
-                                    while (jogar != "encerrar"):
-                                        print("Digite encerrar para encerrar sua jogada")
-                                        jogar = input()
-                            else:
-                                while (jogar != "encerrar"):
-                                    print("Digite encerrar para encerrar sua jogada")
-                                    jogar = input()
-                        else:
-                            print("Esse território já tem dono, o aluguel é", aluguel, "Spacecoins")
-                            spacecoins2 -= aluguel
-                            print("Agora você possui", spacecoins2, "Spacecoins")
-                            while (jogar != "encerrar"):
-                                print("Digite encerrar para encerrar sua jogada")
-                                jogar = input()
+                        print("Você pagará 150 Spacecoins")
+                        spacecoins2 -= 150
+                        while (jogar != "encerrar"):
+                            print("Digite encerrar para encerrar sua jogada")
+                            jogar = input()
+
                     elif(posicao2>24):
+                        print("Você deu a vonta completa no universo e voltará para a posição 1")
+                        print("Você receberá 200 Spacecoins")
+                        spacecoins2 += 200
                         posicao2 = 1
+                        casaNome2 = "- Fronteira Intergalática/Portões do Universo"
 
         elif(i==2):
             print()
@@ -2872,42 +2823,18 @@ while not gameover:
                         preco = 0
                         aluguel = 0
                         print("Você caiu na posição:", posicao3, casaNome3)
-                        if (pertence24 == "" or pertence24 == nome3):
-                            print("Você deseja comprar este território por", preco, "Spacecoins (sim/nao)?")
-                            comprar = input()
-                            if (comprar == "sim"):
-                                if (preco != 0):
-                                    if (pertence24 == nome3):
-                                        print("Esse território já é seu")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                    elif (pertence24 == ""):
-                                        spacecoins3 -= preco
-                                        pertence24 = nome3
-                                        print("Território adquirido")
-                                        print("Agora você possui", spacecoins3, "Spacecoins")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                else:
-                                    print("Este terreno não pode ser comprado")
-                                    while (jogar != "encerrar"):
-                                        print("Digite encerrar para encerrar sua jogada")
-                                        jogar = input()
-                            else:
-                                while (jogar != "encerrar"):
-                                    print("Digite encerrar para encerrar sua jogada")
-                                    jogar = input()
-                        else:
-                            print("Esse território já tem dono, o aluguel é", aluguel, "Spacecoins")
-                            spacecoins3 -= aluguel
-                            print("Agora você possui", spacecoins3, "Spacecoins")
-                            while (jogar != "encerrar"):
-                                print("Digite encerrar para encerrar sua jogada")
-                                jogar = input()
+                        print("Você pagará 150 Spacecoins")
+                        spacecoins3 -= 150
+                        while (jogar != "encerrar"):
+                            print("Digite encerrar para encerrar sua jogada")
+                            jogar = input()
+
                     elif(posicao3>24):
+                        print("Você deu a vonta completa no universo e voltará para a posição 1")
+                        print("Você receberá 200 Spacecoins")
+                        spacecoins3 += 200
                         posicao3 = 1
+                        casaNome3 = "- Fronteira Intergalática/Portões do Universo"
 
         elif(i==3):
             print()
@@ -3818,42 +3745,18 @@ while not gameover:
                         preco = 0
                         aluguel = 0
                         print("Você caiu na posição:", posicao4, casaNome4)
-                        if (pertence24 == "" or pertence24 == nome4):
-                            print("Você deseja comprar este território por", preco, "Spacecoins (sim/nao)?")
-                            comprar = input()
-                            if (comprar == "sim"):
-                                if (preco != 0):
-                                    if (pertence24 == nome4):
-                                        print("Esse território já é seu")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                    elif (pertence24 == ""):
-                                        spacecoins4 -= preco
-                                        pertence24 = nome4
-                                        print("Território adquirido")
-                                        print("Agora você possui", spacecoins4, "Spacecoins")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                else:
-                                    print("Este terreno não pode ser comprado")
-                                    while (jogar != "encerrar"):
-                                        print("Digite encerrar para encerrar sua jogada")
-                                        jogar = input()
-                            else:
-                                while (jogar != "encerrar"):
-                                    print("Digite encerrar para encerrar sua jogada")
-                                    jogar = input()
-                        else:
-                            print("Esse território já tem dono, o aluguel é", aluguel, "Spacecoins")
-                            spacecoins4 -= aluguel
-                            print("Agora você possui", spacecoins4, "Spacecoins")
-                            while (jogar != "encerrar"):
-                                print("Digite encerrar para encerrar sua jogada")
-                                jogar = input()
+                        print("Você pagará 150 Spacecoins")
+                        spacecoins4 -= 150
+                        while (jogar != "encerrar"):
+                            print("Digite encerrar para encerrar sua jogada")
+                            jogar = input()
+
                     elif(posicao4>24):
+                        print("Você deu a vonta completa no universo e voltará para a posição 1")
+                        print("Você receberá 200 Spacecoins")
+                        spacecoins4 += 200
                         posicao4 = 1
+                        casaNome4 = "- Fronteira Intergalática/Portões do Universo"
 
         elif(i==4):
             print()
@@ -4765,39 +4668,15 @@ while not gameover:
                         preco = 0
                         aluguel = 0
                         print("Você caiu na posição:", posicao5, casaNome5)
-                        if (pertence24 == "" or pertence24 == nome5):
-                            print("Você deseja comprar este território por", preco, "Spacecoins (sim/nao)?")
-                            comprar = input()
-                            if (comprar == "sim"):
-                                if (preco != 0):
-                                    if (pertence24 == nome5):
-                                        print("Esse território já é seu")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                    elif (pertence24 == ""):
-                                        spacecoins5 -= preco
-                                        pertence24 = nome5
-                                        print("Território adquirido")
-                                        print("Agora você possui", spacecoins5, "Spacecoins")
-                                        while (jogar != "encerrar"):
-                                            print("Digite encerrar para encerrar sua jogada")
-                                            jogar = input()
-                                else:
-                                    print("Este terreno não pode ser comprado")
-                                    while (jogar != "encerrar"):
-                                        print("Digite encerrar para encerrar sua jogada")
-                                        jogar = input()
-                            else:
-                                while (jogar != "encerrar"):
-                                    print("Digite encerrar para encerrar sua jogada")
-                                    jogar = input()
-                        else:
-                            print("Esse território já tem dono, o aluguel é", aluguel, "Spacecoins")
-                            spacecoins5 -= aluguel
-                            print("Agora você possui", spacecoins5, "Spacecoins")
-                            while (jogar != "encerrar"):
-                                print("Digite encerrar para encerrar sua jogada")
-                                jogar = input()
+                        print("Você pagará 150 Spacecoins")
+                        spacecoins5 -= 150
+                        while (jogar != "encerrar"):
+                            print("Digite encerrar para encerrar sua jogada")
+                            jogar = input()
+
                     elif(posicao5>24):
+                        print("Você deu a vonta completa no universo e voltará para a posição 1")
+                        print("Você receberá 200 Spacecoins")
+                        spacecoins5 += 200
                         posicao5 = 1
+                        casaNome5 = "- Fronteira Intergalática/Portões do Universo"
