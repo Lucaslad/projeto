@@ -86,7 +86,58 @@ while not gameover:
                 elif (jogada=="2"):
                     print("Spacecoins:" ,spacecoins1)
                 elif (jogada=="3"):
-                    print()
+                    print("Seus terrenos:")
+                    if(pertence1!=nome1 and pertence2!=nome1 and pertence3!=nome1 and pertence4!=nome1 and pertence5!=nome1 and pertence6!=nome1 and pertence7!=nome1 and pertence8!=nome1 and pertence9!=nome1 and pertence10!=nome1 and pertence11!=nome1 and pertence12!=nome1 and pertence15!=nome1 and pertence16!=nome1 and pertence17!=nome1 and pertence18!=nome1 and pertence19!=nome1 and pertence20!=nome1 and pertence21!=nome1 and pertence22!=nome1 and pertence23!=nome1 and pertence24!=nome1):
+                        print("Você nao possui nenhum terreno")
+                    if(pertence1==nome1):
+                        print(id1)
+                    if(pertence2==nome1):
+                        print(id2)
+                    if(pertence3==nome1):
+                        print(id3)
+                    if(pertence4==nome1):
+                        print(id4)
+                    if(pertence5==nome1):
+                        print(id5)
+                    if(pertence6==nome1):
+                        print(id6)
+                    if(pertence7==nome1):
+                        print(id7)
+                    if(pertence8==nome1):
+                        print(id8)
+                    if(pertence9==nome1):
+                        print(id9)
+                    if(pertence10==nome1):
+                        print(id10)
+                    if(pertence11==nome1):
+                        print(id11)
+                    if(pertence12==nome1):
+                        print(id12)
+                    if(pertence13==nome1):
+                        print(id13)
+                    if(pertence14==nome1):
+                        print(id14)
+                    if(pertence15==nome1):
+                        print(id15)
+                    if(pertence16==nome1):
+                        print(id16)
+                    if(pertence17==nome1):
+                        print(id17)
+                    if(pertence18==nome1):
+                        print(id18)
+                    if(pertence19==nome1):
+                        print(id19)
+                    if(pertence20==nome1):
+                        print(id20)
+                    if(pertence21==nome1):
+                        print(id21)
+                    if(pertence22==nome1):
+                        print(id22)
+                    if(pertence23==nome1):
+                        print(id23)
+                    if(pertence24==nome1):
+                        print(id24)
+
                 elif (jogada=="jogar" or jogada=="Jogar"):
                     if(status1=="preso"):
                         dado = 0
@@ -95,6 +146,7 @@ while not gameover:
                     posicao1 += dado
                     if (posicao1==1):
                         casaNome1 = "- Fronteira Intergalática/Portões do Universo"
+                        id1 = "1 - Fronteira Intergalática/Portões do Universo"
                         preco = 0
                         aluguel = 0
                         print("Você caiu na posição:", posicao1, casaNome1)
@@ -134,6 +186,7 @@ while not gameover:
                                 jogar = input()
                     elif(posicao1==2):
                         casaNome1 = "- Base Interplanetária de Vênus"
+                        id2 = "2 - Base Interplanetária de Vênus"
                         preco = 250
                         aluguel = 25
                         print("Você caiu na posição:", posicao1, casaNome1)
@@ -172,6 +225,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==3):
+                        id3 = "3 - Base Interplanetária da Terra"
                         casaNome1 = "- Base Interplanetária da Terra"
                         preco = 600
                         aluguel = 60
@@ -211,6 +265,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==4):
+                        id4 = "4 - Base Interplanetária de Marte"
                         casaNome1 = "- Base Interplanetária de Marte"
                         preco = 450
                         aluguel = 45
@@ -250,6 +305,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==5):
+                        id5 = "5 - Base Interplanetária de Júpiter"
                         casaNome1 = "- Base Interplanetária de Júpiter"
                         preco = 450
                         aluguel = 45
@@ -289,6 +345,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==6):
+                        id6 = "6 - Base Interplanetária de Saturno"
                         casaNome1 = "- Base Interplanetária de Saturno"
                         preco = 250
                         aluguel = 25
@@ -328,6 +385,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==7):
+                        id7 = "7 - Prisão Univeral/Passagem de Visitantes"
                         casaNome1 = "- Prisão Univeral/Passagem de Visitantes"
                         preco = 0
                         aluguel = 0
@@ -376,6 +434,7 @@ while not gameover:
                                     jogar = input()
 
                     elif(posicao1==8):
+                        id8 = "8 - Base Lunar da Terra"
                         casaNome1 = "- Base Lunar da Terra"
                         preco = 600
                         aluguel = 60
@@ -415,6 +474,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==9):
+                        id9 = "9 - Base Lunar de Fobos"
                         casaNome1  = "- Base Lunar de Fobos"
                         preco = 250
                         aluguel = 25
@@ -454,6 +514,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==10):
+                        id10 = "10 - Base Lunar Europa"
                         casaNome1 = "- Base Lunar Europa"
                         preco = 450
                         aluguel = 45
@@ -493,6 +554,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==11):
+                        id11 = "11 - Base Lunar de Pandora"
                         casaNome1 = "- Base Lunar de Pandora"
                         preco = 450
                         aluguel = 45
@@ -532,6 +594,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==12):
+                        id12 = "12 - Base Lunar de Talassa"
                         casaNome1 = "- Base Lunar de Talassa"
                         preco = 250
                         aluguel = 25
@@ -571,6 +634,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==13):
+                        id13 = "13 - Satélite da sorte: JACKPOT"
                         casaNome1 = "- Satélite da sorte: JACKPOT"
                         preco = 0
                         aluguel = 0
@@ -610,6 +674,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==14):
+                        id14 = "14 - Planeta anão: Plutão"
                         casaNome1 = "- Planeta anão: Plutão"
                         preco = 250
                         aluguel = 25
@@ -649,6 +714,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==15):
+                        id15 = "15 - Planeta anão: Éris"
                         casaNome1 = "- Planeta anão: Éris"
                         preco = 450
                         aluguel = 45
@@ -688,6 +754,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==16):
+                        id16 = "16 - Planeta anão: Haumea"
                         casaNome1 = "- Planeta anão: Haumea"
                         preco = 250
                         aluguel = 25
@@ -727,6 +794,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==17):
+                        id17 = "17 - Planeta anão: Ceres"
                         casaNome1 = "- Planeta anão: Ceres"
                         preco = 450
                         aluguel = 45
@@ -766,6 +834,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==18):
+                        id18 = "18 - Planeta anão: Makemake"
                         casaNome1 = "- Planeta anão: Makemake"
                         preco = 600
                         aluguel = 60
@@ -805,6 +874,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==19):
+                        id19 = "19 - Vá para a prisão universal!"
                         casaNome1 = "- Vá para a prisão universal!"
                         preco = 0
                         aluguel = 0
@@ -818,6 +888,7 @@ while not gameover:
                             jogar = input()
 
                     elif(posicao1==20):
+                        id20 = "20 - Base extra-solar Gliese 581 d"
                         casaNome1 = "- Base extra-solar Gliese 581 d"
                         preco = 250
                         aluguel = 25
@@ -857,6 +928,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==21):
+                        id21 = "21 - Base extra-solar Upsilon Andromedae"
                         casaNome1 = "- Base extra-solar Upsilon Andromedae"
                         preco = 450
                         aluguel = 45
@@ -896,6 +968,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==22):
+                        id22 = "22 - Base extra-solar X0-3b"
                         casaNome1 = "- Base extra-solar X0-3b"
                         preco = 600
                         aluguel = 60
@@ -935,6 +1008,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==23):
+                        id23 = "23 - Base extra-solar C0R0T-Exo-1b"
                         casaNome1 = "- Base extra-solar C0R0T-Exo-1b"
                         preco = 250
                         aluguel = 25
@@ -974,6 +1048,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao1==24):
+                        id24 = "24 - Imposto espacial"
                         casaNome1 = "- Imposto espacial"
                         preco = 0
                         aluguel = 0
@@ -1009,7 +1084,58 @@ while not gameover:
                 elif(jogada=="2"):
                     print("Spacecoins:" ,spacecoins2)
                 elif(jogada=="3"):
-                    print()
+                    print("Seus terrenos:")
+                    if (pertence1 != nome2 and pertence2 != nome2 and pertence3 != nome2 and pertence4 != nome2 and pertence5 != nome2 and pertence6 != nome2 and pertence7 != nome2 and pertence8 != nome2 and pertence9 != nome2 and pertence10 != nome2 and pertence11 != nome2 and pertence12 != nome2 and pertence15 != nome2 and pertence16 != nome2 and pertence17 != nome2 and pertence18 != nome2 and pertence19 != nome2 and pertence20 != nome2 and pertence21 != nome2 and pertence22 != nome2 and pertence23 != nome2 and pertence24 != nome2):
+                        print("Você nao possui nenhum terreno")
+                    if (pertence1 == nome2):
+                        print(id1)
+                    if (pertence2 == nome2):
+                        print(id2)
+                    if (pertence3 == nome2):
+                        print(id3)
+                    if (pertence4 == nome2):
+                        print(id4)
+                    if (pertence5 == nome2):
+                        print(id5)
+                    if (pertence6 == nome2):
+                        print(id6)
+                    if (pertence7 == nome2):
+                        print(id7)
+                    if (pertence8 == nome2):
+                        print(id8)
+                    if (pertence9 == nome2):
+                        print(id9)
+                    if (pertence10 == nome2):
+                        print(id10)
+                    if (pertence11 == nome2):
+                        print(id11)
+                    if (pertence12 == nome2):
+                        print(id12)
+                    if (pertence13 == nome2):
+                        print(id13)
+                    if (pertence14 == nome2):
+                        print(id14)
+                    if (pertence15 == nome2):
+                        print(id15)
+                    if (pertence16 == nome2):
+                        print(id16)
+                    if (pertence17 == nome2):
+                        print(id17)
+                    if (pertence18 == nome2):
+                        print(id18)
+                    if (pertence19 == nome2):
+                        print(id19)
+                    if (pertence20 == nome2):
+                        print(id20)
+                    if (pertence21 == nome2):
+                        print(id21)
+                    if (pertence22 == nome2):
+                        print(id22)
+                    if (pertence23 == nome2):
+                        print(id23)
+                    if (pertence24 == nome2):
+                        print(id24)
+
                 elif(jogada=="jogar" or jogada=="Jogar"):
                     if(status2=="preso"):
                         dado = 0
@@ -1017,6 +1143,7 @@ while not gameover:
                         dado = random.randint(1,6)
                     posicao2 += dado
                     if (posicao2==1):
+                        id1 = "1 - Fronteira Intergalática/Portões do Universo"
                         casaNome2 = "- Fronteira Intergalática/Portões do Universo"
                         preco = 0
                         aluguel = 0
@@ -1056,6 +1183,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==2):
+                        id2 = "2 - Base Interplanetária de Vênus"
                         casaNome2 = "- Base Interplanetária de Vênus"
                         preco = 250
                         aluguel = 25
@@ -1095,6 +1223,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==3):
+                        id3 = "3 - Base Interplanetária da Terra"
                         casaNome2 = "- Base Interplanetária da Terra"
                         preco = 600
                         aluguel = 60
@@ -1134,6 +1263,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==4):
+                        id4 = "4 - Base Interplanetária de Marte"
                         casaNome2 = "- Base Interplanetária de Marte"
                         preco = 450
                         aluguel = 45
@@ -1173,6 +1303,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==5):
+                        id5 = "5 - Base Interplanetária de Júpiter"
                         casaNome2 = "- Base Interplanetária de Júpiter"
                         preco = 450
                         aluguel = 45
@@ -1212,6 +1343,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==6):
+                        id6 = "6 - Base Interplanetária de Saturno"
                         casaNome2 = "- Base Interplanetária de Saturno"
                         preco = 250
                         aluguel = 25
@@ -1251,6 +1383,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==7):
+                        id7 = "7 - Prisão Univeral/Passagem de Visitantes"
                         casaNome2 = "- Prisão Univeral/Passagem de Visitantes"
                         preco = 0
                         aluguel = 0
@@ -1299,6 +1432,7 @@ while not gameover:
                                     jogar = input()
 
                     elif(posicao2==8):
+                        id8 = "8 - Base Lunar da Terra"
                         casaNome2 = "- Base Lunar da Terra"
                         preco = 600
                         aluguel = 60
@@ -1338,6 +1472,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==9):
+                        id9 = "9 - Base Lunar de Fobos"
                         casaNome2  = "- Base Lunar de Fobos"
                         preco = 250
                         aluguel = 25
@@ -1377,6 +1512,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==10):
+                        id10 = "10 - Base Lunar Europa"
                         casaNome2 = "- Base Lunar Europa"
                         preco = 450
                         aluguel = 45
@@ -1416,6 +1552,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==11):
+                        id11 = "11 - Base Lunar de Pandora"
                         casaNome2 = "- Base Lunar de Pandora"
                         preco = 450
                         aluguel = 45
@@ -1455,6 +1592,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==12):
+                        id12 = "12 - Base Lunar de Talassa"
                         casaNome2 = "- Base Lunar de Talassa"
                         preco = 250
                         aluguel = 25
@@ -1494,6 +1632,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==13):
+                        id13 = "13 - Satélite da sorte: JACKPOT"
                         casaNome2 = "- Satélite da sorte: JACKPOT"
                         preco = 0
                         aluguel = 0
@@ -1533,6 +1672,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==14):
+                        id14 = "14 - Planeta anão: Plutão"
                         casaNome2 = "- Planeta anão: Plutão"
                         preco = 250
                         aluguel = 25
@@ -1572,6 +1712,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==15):
+                        id15 = "15 - Planeta anão: Éris"
                         casaNome2 = "- Planeta anão: Éris"
                         preco = 450
                         aluguel = 45
@@ -1611,6 +1752,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==16):
+                        id16 = "16 - Planeta anão: Haumea"
                         casaNome2 = "- Planeta anão: Haumea"
                         preco = 250
                         aluguel = 25
@@ -1650,6 +1792,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==17):
+                        id17 = "17 - Planeta anão: Ceres"
                         casaNome2 = "- Planeta anão: Ceres"
                         preco = 450
                         aluguel = 45
@@ -1689,6 +1832,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==18):
+                        id18 = "18 - Planeta anão: Makemake"
                         casaNome2 = "- Planeta anão: Makemake"
                         preco = 600
                         aluguel = 60
@@ -1728,6 +1872,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==19):
+                        id19 = "19 - Vá para a prisão universal!"
                         casaNome2 = "- Vá para a prisão universal!"
                         preco = 0
                         aluguel = 0
@@ -1741,6 +1886,7 @@ while not gameover:
                             jogar = input()
 
                     elif(posicao2==20):
+                        id20 = "20 - Base extra-solar Gliese 581 d"
                         casaNome2 = "- Base extra-solar Gliese 581 d"
                         preco = 250
                         aluguel = 25
@@ -1780,6 +1926,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==21):
+                        id21 = "21 - Base extra-solar Upsilon Andromedae"
                         casaNome2 = "- Base extra-solar Upsilon Andromedae"
                         preco = 450
                         aluguel = 45
@@ -1819,6 +1966,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==22):
+                        id22 = "22 - Base extra-solar X0-3b"
                         casaNome2 = "- Base extra-solar X0-3b"
                         preco = 600
                         aluguel = 60
@@ -1858,6 +2006,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==23):
+                        id23 = "23 - Base extra-solar C0R0T-Exo-1b"
                         casaNome2 = "- Base extra-solar C0R0T-Exo-1b"
                         preco = 250
                         aluguel = 25
@@ -1897,6 +2046,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao2==24):
+                        id24 = "24 - Imposto espacial"
                         casaNome2 = "- Imposto espacial"
                         preco = 0
                         aluguel = 0
@@ -1931,7 +2081,58 @@ while not gameover:
                 elif (jogada == "2"):
                     print("Spacecoins:", spacecoins3)
                 elif (jogada == "3"):
-                    print()
+                    print("Seus terrenos:")
+                    if (pertence1 != nome3 and pertence2 != nome3 and pertence3 != nome3 and pertence4 != nome3 and pertence5 != nome3 and pertence6 != nome3 and pertence7 != nome3 and pertence8 != nome3 and pertence9 != nome3 and pertence10 != nome3 and pertence11 != nome3 and pertence12 != nome3 and pertence15 != nome3 and pertence16 != nome3 and pertence17 != nome3 and pertence18 != nome3 and pertence19 != nome3 and pertence20 != nome3 and pertence21 != nome3 and pertence22 != nome3 and pertence23 != nome3 and pertence24 != nome3):
+                        print("Você nao possui nenhum terreno")
+                    if (pertence1 == nome3):
+                        print(id1)
+                    if (pertence2 == nome3):
+                        print(id2)
+                    if (pertence3 == nome3):
+                        print(id3)
+                    if (pertence4 == nome3):
+                        print(id4)
+                    if (pertence5 == nome3):
+                        print(id5)
+                    if (pertence6 == nome3):
+                        print(id6)
+                    if (pertence7 == nome3):
+                        print(id7)
+                    if (pertence8 == nome3):
+                        print(id8)
+                    if (pertence9 == nome3):
+                        print(id9)
+                    if (pertence10 == nome3):
+                        print(id10)
+                    if (pertence11 == nome3):
+                        print(id11)
+                    if (pertence12 == nome3):
+                        print(id12)
+                    if (pertence13 == nome3):
+                        print(id13)
+                    if (pertence14 == nome3):
+                        print(id14)
+                    if (pertence15 == nome3):
+                        print(id15)
+                    if (pertence16 == nome3):
+                        print(id16)
+                    if (pertence17 == nome3):
+                        print(id17)
+                    if (pertence18 == nome3):
+                        print(id18)
+                    if (pertence19 == nome3):
+                        print(id19)
+                    if (pertence20 == nome3):
+                        print(id20)
+                    if (pertence21 == nome3):
+                        print(id21)
+                    if (pertence22 == nome3):
+                        print(id22)
+                    if (pertence23 == nome3):
+                        print(id23)
+                    if (pertence24 == nome3):
+                        print(id24)
+
                 elif (jogada == "jogar" or jogada == "Jogar"):
                     if(status3=="preso"):
                         dado = 0
@@ -1939,6 +2140,7 @@ while not gameover:
                         dado = random.randint(1, 6)
                     posicao3 += dado
                     if (posicao3==1):
+                        id1 = "1 - Fronteira Intergalática/Portões do Universo"
                         casaNome3 = "- Fronteira Intergalática/Portões do Universo"
                         preco = 0
                         aluguel = 0
@@ -1978,6 +2180,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==2):
+                        id2 = "2 - Base Interplanetária de Vênus"
                         casaNome3 = "- Base Interplanetária de Vênus"
                         preco = 250
                         aluguel = 25
@@ -2017,6 +2220,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==3):
+                        id3 = "3 - Base Interplanetária da Terra"
                         casaNome3 = "- Base Interplanetária da Terra"
                         preco = 600
                         aluguel = 60
@@ -2056,6 +2260,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==4):
+                        id4 = "4 - Base Interplanetária de Marte"
                         casaNome3 = "- Base Interplanetária de Marte"
                         preco = 450
                         aluguel = 45
@@ -2095,6 +2300,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==5):
+                        id5 = "5 - Base Interplanetária de Júpiter"
                         casaNome3 = "- Base Interplanetária de Júpiter"
                         preco = 450
                         aluguel = 45
@@ -2134,6 +2340,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==6):
+                        id6 = "6 - Base Interplanetária de Saturno"
                         casaNome3 = "- Base Interplanetária de Saturno"
                         preco = 250
                         aluguel = 25
@@ -2173,6 +2380,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==7):
+                        id7 = "7 - Prisão Univeral/Passagem de Visitantes"
                         casaNome3 = "- Prisão Univeral/Passagem de Visitantes"
                         preco = 0
                         aluguel = 0
@@ -2221,6 +2429,7 @@ while not gameover:
                                     jogar = input()
 
                     elif(posicao3==8):
+                        id8 = "8 - Base Lunar da Terra"
                         casaNome3 = "- Base Lunar da Terra"
                         preco = 600
                         aluguel = 60
@@ -2260,6 +2469,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==9):
+                        id9 = "9 - Base Lunar de Fobos"
                         casaNome3  = "- Base Lunar de Fobos"
                         preco = 250
                         aluguel = 25
@@ -2299,6 +2509,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==10):
+                        id10 = "10 - Base Lunar Europa"
                         casaNome3 = "- Base Lunar Europa"
                         preco = 450
                         aluguel = 45
@@ -2338,6 +2549,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==11):
+                        id11 = "11 - Base Lunar de Pandora"
                         casaNome3 = "- Base Lunar de Pandora"
                         preco = 450
                         aluguel = 45
@@ -2377,6 +2589,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==12):
+                        id12 = "12 - Base Lunar de Talassa"
                         casaNome3 = "- Base Lunar de Talassa"
                         preco = 250
                         aluguel = 25
@@ -2416,6 +2629,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==13):
+                        id13 = "13 - Satélite da sorte: JACKPOT"
                         casaNome3 = "- Satélite da sorte: JACKPOT"
                         preco = 0
                         aluguel = 0
@@ -2455,6 +2669,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==14):
+                        id14 = "14 - Planeta anão: Plutão"
                         casaNome3 = "- Planeta anão: Plutão"
                         preco = 250
                         aluguel = 25
@@ -2494,6 +2709,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==15):
+                        id15 = "15 - Planeta anão: Éris"
                         casaNome3 = "- Planeta anão: Éris"
                         preco = 450
                         aluguel = 45
@@ -2533,6 +2749,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==16):
+                        id16 = "16 - Planeta anão: Haumea"
                         casaNome3 = "- Planeta anão: Haumea"
                         preco = 250
                         aluguel = 25
@@ -2572,6 +2789,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==17):
+                        id17 = "17 - Planeta anão: Ceres"
                         casaNome3 = "- Planeta anão: Ceres"
                         preco = 450
                         aluguel = 45
@@ -2611,6 +2829,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==18):
+                        id18 = "18 - Planeta anão: Makemake"
                         casaNome3 = "- Planeta anão: Makemake"
                         preco = 600
                         aluguel = 60
@@ -2650,6 +2869,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==19):
+                        id19 = "19 - Vá para a prisão universal!"
                         casaNome3 = "- Vá para a prisão universal!"
                         preco = 0
                         aluguel = 0
@@ -2663,6 +2883,7 @@ while not gameover:
                             jogar = input()
 
                     elif(posicao3==20):
+                        id20 = "20 - Base extra-solar Gliese 581 d"
                         casaNome3 = "- Base extra-solar Gliese 581 d"
                         preco = 250
                         aluguel = 25
@@ -2702,6 +2923,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==21):
+                        id21 = "21 - Base extra-solar Upsilon Andromedae"
                         casaNome3 = "- Base extra-solar Upsilon Andromedae"
                         preco = 450
                         aluguel = 45
@@ -2741,6 +2963,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==22):
+                        id22 = "22 - Base extra-solar X0-3b"
                         casaNome3 = "- Base extra-solar X0-3b"
                         preco = 600
                         aluguel = 60
@@ -2780,6 +3003,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==23):
+                        id23 = "23 - Base extra-solar C0R0T-Exo-1b"
                         casaNome3 = "- Base extra-solar C0R0T-Exo-1b"
                         preco = 250
                         aluguel = 25
@@ -2819,6 +3043,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao3==24):
+                        id24 = "24 - Imposto espacial"
                         casaNome3 = "- Imposto espacial"
                         preco = 0
                         aluguel = 0
@@ -2846,6 +3071,58 @@ while not gameover:
                 print("1 - Para saber sua posição na galáxia")
                 print("2 - Para saber quantos Spacecoins possui")
                 print("3 - Para ver seus territórios comprados")
+                print("Seus terrenos:")
+                if (pertence1 != nome4 and pertence2 != nome4 and pertence3 != nome4 and pertence4 != nome4 and pertence5 != nome4 and pertence6 != nome4 and pertence7 != nome4 and pertence8 != nome4 and pertence9 != nome4 and pertence10 != nome4 and pertence11 != nome4 and pertence12 != nome4 and pertence15 != nome4 and pertence16 != nome4 and pertence17 != nome4 and pertence18 != nome4 and pertence19 != nome4 and pertence20 != nome4 and pertence21 != nome4 and pertence22 != nome4 and pertence23 != nome4 and pertence24 != nome4):
+                    print("Você nao possui nenhum terreno")
+                if (pertence1 == nome4):
+                    print(id1)
+                if (pertence2 == nome4):
+                    print(id2)
+                if (pertence3 == nome4):
+                    print(id3)
+                if (pertence4 == nome4):
+                    print(id4)
+                if (pertence5 == nome4):
+                    print(id5)
+                if (pertence6 == nome4):
+                    print(id6)
+                if (pertence7 == nome4):
+                    print(id7)
+                if (pertence8 == nome4):
+                    print(id8)
+                if (pertence9 == nome4):
+                    print(id9)
+                if (pertence10 == nome4):
+                    print(id10)
+                if (pertence11 == nome4):
+                    print(id11)
+                if (pertence12 == nome4):
+                    print(id12)
+                if (pertence13 == nome4):
+                    print(id13)
+                if (pertence14 == nome4):
+                    print(id14)
+                if (pertence15 == nome4):
+                    print(id15)
+                if (pertence16 == nome4):
+                    print(id16)
+                if (pertence17 == nome4):
+                    print(id17)
+                if (pertence18 == nome4):
+                    print(id18)
+                if (pertence19 == nome4):
+                    print(id19)
+                if (pertence20 == nome4):
+                    print(id20)
+                if (pertence21 == nome4):
+                    print(id21)
+                if (pertence22 == nome4):
+                    print(id22)
+                if (pertence23 == nome4):
+                    print(id23)
+                if (pertence24 == nome4):
+                    print(id24)
+
                 print("jogar - Para jogar os dados")
                 jogada = input()
                 if (jogada == "1"):
@@ -2861,6 +3138,7 @@ while not gameover:
                         dado = random.randint(1, 6)
                     posicao4 += dado
                     if (posicao4==1):
+                        id1 = "1 - Fronteira Intergalática/Portões do Universo"
                         casaNome4 = "- Fronteira Intergalática/Portões do Universo"
                         preco = 0
                         aluguel = 0
@@ -2900,6 +3178,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==2):
+                        id2 = "2 - Base Interplanetária de Vênus"
                         casaNome4 = "- Base Interplanetária de Vênus"
                         preco = 250
                         aluguel = 25
@@ -2939,6 +3218,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==3):
+                        id3 = "3 - Base Interplanetária da Terra"
                         casaNome4 = "- Base Interplanetária da Terra"
                         preco = 600
                         aluguel = 60
@@ -2978,6 +3258,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==4):
+                        id4 = "4 - Base Interplanetária de Marte"
                         casaNome4 = "- Base Interplanetária de Marte"
                         preco = 450
                         aluguel = 45
@@ -3017,6 +3298,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==5):
+                        id5 = "5 - Base Interplanetária de Júpiter"
                         casaNome4 = "- Base Interplanetária de Júpiter"
                         preco = 450
                         aluguel = 45
@@ -3056,6 +3338,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==6):
+                        id6 = "6 - Base Interplanetária de Saturno"
                         casaNome4 = "- Base Interplanetária de Saturno"
                         preco = 250
                         aluguel = 25
@@ -3095,6 +3378,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==7):
+                        id7 = "7 - Prisão Univeral/Passagem de Visitantes"
                         casaNome4 = "- Prisão Univeral/Passagem de Visitantes"
                         preco = 0
                         aluguel = 0
@@ -3143,6 +3427,7 @@ while not gameover:
                                     jogar = input()
 
                     elif(posicao4==8):
+                        id8 = "8 - Base Lunar da Terra"
                         casaNome4 = "- Base Lunar da Terra"
                         preco = 600
                         aluguel = 60
@@ -3182,6 +3467,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==9):
+                        id9 = "9 - Base Lunar de Fobos"
                         casaNome4  = "- Base Lunar de Fobos"
                         preco = 250
                         aluguel = 25
@@ -3221,6 +3507,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==10):
+                        id10 = "10 - Base Lunar Europa"
                         casaNome4 = "- Base Lunar Europa"
                         preco = 450
                         aluguel = 45
@@ -3260,6 +3547,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==11):
+                        id11 = "11 - Base Lunar de Pandora"
                         casaNome4 = "- Base Lunar de Pandora"
                         preco = 450
                         aluguel = 45
@@ -3299,6 +3587,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==12):
+                        id12 = "12 - Base Lunar de Talassa"
                         casaNome4 = "- Base Lunar de Talassa"
                         preco = 250
                         aluguel = 25
@@ -3338,6 +3627,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==13):
+                        id13 = "13 - Satélite da sorte: JACKPOT"
                         casaNome4 = "- Satélite da sorte: JACKPOT"
                         preco = 0
                         aluguel = 0
@@ -3377,6 +3667,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==14):
+                        id14 = "14 - Planeta anão: Plutão"
                         casaNome4 = "- Planeta anão: Plutão"
                         preco = 250
                         aluguel = 25
@@ -3416,6 +3707,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==15):
+                        id15 = "15 - Planeta anão: Éris"
                         casaNome4 = "- Planeta anão: Éris"
                         preco = 450
                         aluguel = 45
@@ -3455,6 +3747,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==16):
+                        id16 = "16 - Planeta anão: Haumea"
                         casaNome4 = "- Planeta anão: Haumea"
                         preco = 250
                         aluguel = 25
@@ -3494,6 +3787,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==17):
+                        id17 = "17 - Planeta anão: Ceres"
                         casaNome4 = "- Planeta anão: Ceres"
                         preco = 450
                         aluguel = 45
@@ -3533,6 +3827,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==18):
+                        id18 = "18 - Planeta anão: Makemake"
                         casaNome4 = "- Planeta anão: Makemake"
                         preco = 600
                         aluguel = 60
@@ -3572,6 +3867,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==19):
+                        id19 = "19 - Vá para a prisão universal!"
                         casaNome4 = "- Vá para a prisão universal!"
                         preco = 0
                         aluguel = 0
@@ -3585,6 +3881,7 @@ while not gameover:
                             jogar = input()
 
                     elif(posicao4==20):
+                        id20 = "20 - Base extra-solar Gliese 581 d"
                         casaNome4 = "- Base extra-solar Gliese 581 d"
                         preco = 250
                         aluguel = 25
@@ -3624,6 +3921,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==21):
+                        id21 = "21 - Base extra-solar Upsilon Andromedae"
                         casaNome4 = "- Base extra-solar Upsilon Andromedae"
                         preco = 450
                         aluguel = 45
@@ -3663,6 +3961,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==22):
+                        id22 = "22 - Base extra-solar X0-3b"
                         casaNome4 = "- Base extra-solar X0-3b"
                         preco = 600
                         aluguel = 60
@@ -3702,6 +4001,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==23):
+                        id23 = "23 - Base extra-solar C0R0T-Exo-1b"
                         casaNome4 = "- Base extra-solar C0R0T-Exo-1b"
                         preco = 250
                         aluguel = 25
@@ -3741,6 +4041,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao4==24):
+                        id24 = "24 - Imposto espacial"
                         casaNome4 = "- Imposto espacial"
                         preco = 0
                         aluguel = 0
@@ -3768,6 +4069,58 @@ while not gameover:
                 print("1 - Para saber sua posição na galáxia")
                 print("2 - Para saber quantos Spacecoins possui")
                 print("3 - Para ver seus territórios comprados")
+                print("Seus terrenos:")
+                if (pertence1 != nome5 and pertence2 != nome5 and pertence3 != nome5 and pertence4 != nome5 and pertence5 != nome5 and pertence6 != nome5 and pertence7 != nome5 and pertence8 != nome5 and pertence9 != nome5 and pertence10 != nome5 and pertence11 != nome5 and pertence12 != nome5 and pertence15 != nome5 and pertence16 != nome5 and pertence17 != nome5 and pertence18 != nome5 and pertence19 != nome5 and pertence20 != nome5 and pertence21 != nome5 and pertence22 != nome5 and pertence23 != nome5 and pertence24 != nome5):
+                    print("Você nao possui nenhum terreno")
+                if (pertence1 == nome5):
+                    print(id1)
+                if (pertence2 == nome5):
+                    print(id2)
+                if (pertence3 == nome5):
+                    print(id3)
+                if (pertence4 == nome5):
+                    print(id4)
+                if (pertence5 == nome5):
+                    print(id5)
+                if (pertence6 == nome5):
+                    print(id6)
+                if (pertence7 == nome5):
+                    print(id7)
+                if (pertence8 == nome5):
+                    print(id8)
+                if (pertence9 == nome5):
+                    print(id9)
+                if (pertence10 == nome5):
+                    print(id10)
+                if (pertence11 == nome5):
+                    print(id11)
+                if (pertence12 == nome5):
+                    print(id12)
+                if (pertence13 == nome5):
+                    print(id13)
+                if (pertence14 == nome5):
+                    print(id14)
+                if (pertence15 == nome5):
+                    print(id15)
+                if (pertence16 == nome5):
+                    print(id16)
+                if (pertence17 == nome5):
+                    print(id17)
+                if (pertence18 == nome5):
+                    print(id18)
+                if (pertence19 == nome5):
+                    print(id19)
+                if (pertence20 == nome5):
+                    print(id20)
+                if (pertence21 == nome5):
+                    print(id21)
+                if (pertence22 == nome5):
+                    print(id22)
+                if (pertence23 == nome5):
+                    print(id23)
+                if (pertence24 == nome5):
+                    print(id24)
+
                 print("jogar - Para jogar os dados")
                 jogada = input()
                 if (jogada == "1"):
@@ -3783,6 +4136,7 @@ while not gameover:
                         dado = random.randint(1,6)
                     posicao5 += dado
                     if (posicao5==1):
+                        id1 = "1 - Fronteira Intergalática/Portões do Universo"
                         casaNome5 = "- Fronteira Intergalática/Portões do Universo"
                         preco = 0
                         aluguel = 0
@@ -3822,6 +4176,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==2):
+                        id2 = "2 - Base Interplanetária de Vênus"
                         casaNome5 = "- Base Interplanetária de Vênus"
                         preco = 250
                         aluguel = 25
@@ -3861,6 +4216,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==3):
+                        id3 = "3 - Base Interplanetária da Terra"
                         casaNome5 = "- Base Interplanetária da Terra"
                         preco = 600
                         aluguel = 60
@@ -3900,6 +4256,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif (posicao5==4):
+                        id4 = "4 - Base Interplanetária de Marte"
                         casaNome5 = "- Base Interplanetária de Marte"
                         preco = 450
                         aluguel = 45
@@ -3939,6 +4296,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==5):
+                        id5 = "5 - Base Interplanetária de Júpiter"
                         casaNome5 = "- Base Interplanetária de Júpiter"
                         preco = 450
                         aluguel = 45
@@ -3978,6 +4336,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==6):
+                        id6 = "6 - Base Interplanetária de Saturno"
                         casaNome5 = "- Base Interplanetária de Saturno"
                         preco = 250
                         aluguel = 25
@@ -4017,6 +4376,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==7):
+                        id7 = "7 - Prisão Univeral/Passagem de Visitantes"
                         casaNome5 = "- Prisão Univeral/Passagem de Visitantes"
                         preco = 0
                         aluguel = 0
@@ -4066,6 +4426,7 @@ while not gameover:
 
 
                     elif(posicao5==8):
+                        id8 = "8 - Base Lunar da Terra"
                         casaNome5 = "- Base Lunar da Terra"
                         preco = 600
                         aluguel = 60
@@ -4105,6 +4466,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==9):
+                        id9 = "9 - Base Lunar de Fobos"
                         casaNome5  = "- Base Lunar de Fobos"
                         preco = 250
                         aluguel = 25
@@ -4144,6 +4506,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==10):
+                        id10 = "10 - Base Lunar Europa"
                         casaNome5 = "- Base Lunar Europa"
                         preco = 450
                         aluguel = 45
@@ -4183,6 +4546,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==11):
+                        id11 = "11 - Base Lunar de Pandora"
                         casaNome5 = "- Base Lunar de Pandora"
                         preco = 450
                         aluguel = 45
@@ -4222,6 +4586,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==12):
+                        id12 = "12 - Base Lunar de Talassa"
                         casaNome5 = "- Base Lunar de Talassa"
                         preco = 250
                         aluguel = 25
@@ -4261,6 +4626,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==13):
+                        id13 = "13 - Satélite da sorte: JACKPOT"
                         casaNome5 = "- Satélite da sorte: JACKPOT"
                         preco = 0
                         aluguel = 0
@@ -4300,6 +4666,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==14):
+                        id14 = "14 - Planeta anão: Plutão"
                         casaNome5 = "- Planeta anão: Plutão"
                         preco = 250
                         aluguel = 25
@@ -4339,6 +4706,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==15):
+                        id15 = "15 - Planeta anão: Éris"
                         casaNome5 = "- Planeta anão: Éris"
                         preco = 450
                         aluguel = 45
@@ -4378,6 +4746,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==16):
+                        id16 = "16 - Planeta anão: Haumea"
                         casaNome5 = "- Planeta anão: Haumea"
                         preco = 250
                         aluguel = 25
@@ -4417,6 +4786,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==17):
+                        id17 = "17 - Planeta anão: Ceres"
                         casaNome5 = "- Planeta anão: Ceres"
                         preco = 450
                         aluguel = 45
@@ -4456,6 +4826,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==18):
+                        id18 = "18 - Planeta anão: Makemake"
                         casaNome5 = "- Planeta anão: Makemake"
                         preco = 600
                         aluguel = 60
@@ -4495,6 +4866,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==19):
+                        id19 = "19 - Vá para a prisão universal!"
                         casaNome5 = "- Vá para a prisão universal!"
                         preco = 0
                         aluguel = 0
@@ -4508,6 +4880,7 @@ while not gameover:
                             jogar = input()
 
                     elif(posicao5==20):
+                        id20 = "20 - Base extra-solar Gliese 581 d"
                         casaNome5 = "- Base extra-solar Gliese 581 d"
                         preco = 250
                         aluguel = 25
@@ -4547,6 +4920,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==21):
+                        id21 = "21 - Base extra-solar Upsilon Andromedae"
                         casaNome5 = "- Base extra-solar Upsilon Andromedae"
                         preco = 450
                         aluguel = 45
@@ -4586,6 +4960,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==22):
+                        id22 = "22 - Base extra-solar X0-3b"
                         casaNome5 = "- Base extra-solar X0-3b"
                         preco = 600
                         aluguel = 60
@@ -4625,6 +5000,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==23):
+                        id23 = "23 - Base extra-solar C0R0T-Exo-1b"
                         casaNome5 = "- Base extra-solar C0R0T-Exo-1b"
                         preco = 250
                         aluguel = 25
@@ -4664,6 +5040,7 @@ while not gameover:
                                 print("Digite encerrar para encerrar sua jogada")
                                 jogar = input()
                     elif(posicao5==24):
+                        id24 = "24 - Imposto espacial"
                         casaNome5 = "- Imposto espacial"
                         preco = 0
                         aluguel = 0
