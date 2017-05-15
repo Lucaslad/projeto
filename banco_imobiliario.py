@@ -1,3 +1,5 @@
+#PROGRAMA FEITO POR: Juan (Tia: 317110781), Lucas (Tia: 31748317) e Rodrigo (Tia:)
+
 import random
 
 casaNome = "" #Variável que mostra o nome da cada do tabuleiro
